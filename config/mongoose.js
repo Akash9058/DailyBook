@@ -12,19 +12,3 @@ db.once('open',function(){
     console.log("successfully connected to database");
 });
  module.exports=db;
-
-
-
-
-
-
-
-
-
-
-
-
-
-............................
-          ...
-          
