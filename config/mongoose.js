@@ -6,11 +6,9 @@ const db = mongoose.connection;
 
 db.on('error',function(err){
     console.log("error on connecting");
-});
+}); 
 
 db.once('open',function(){
     console.log("successfully connected to database");
 });
  module.exports=db;
-
- 
