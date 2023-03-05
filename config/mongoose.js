@@ -9,6 +9,6 @@ db.on('error',function(err){
 }); 
 
 db.once('open',function(){
-    console.log("successfully connected to database");
+    console.log("sahi se connect ho gya ");
 });
  module.exports=db;
