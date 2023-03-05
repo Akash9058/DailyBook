@@ -3,6 +3,12 @@ const app = express();
 const port = 1000;
 const router= require('./routes/index');
 const expressLayouts = require('express-ejs-layouts');
+const database= require('./config/mongoose')
+const bodyParser =require('body-parser')
+const passport = require('passport');
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('./assets'));
 app.use(expressLayouts);
